@@ -1,0 +1,136 @@
+/* -- fonts, html -- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: JetBrainsMono NF;
+}
+
+body {
+    background-color: #e5d7be;
+}
+
+a, a:visited, a:hover, .box .box-container:hover, .box .box-container {
+        -webkit-transition: all 150ms ease-in-out;
+        -moz-transition: all 150ms ease-in-out;
+        -ms-transition: all 150ms ease-in-out;
+        -o-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+}
+.box .box-container:hover {
+        -webkit-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.75);
+}
+.container form, .box .box-container {
+        -webkit-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+        -moz-box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+        box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.25);
+}
+
+/* -- container styling -- */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+}
+
+/* -- link styling -- */
+a, a:visited {
+    color: #6C7789;
+}
+a:hover {
+    color: white;
+}
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+.box .box-container .link {
+    font-size: 15px;
+    padding: 20px 0 0 15px;
+    text-align: left;
+}
+
+/* -- greetings styling -- */
+.container .sGreetings {
+    font-size: 20px;
+    color: #414754;
+}
+
+/* -- time styling -- */
+
+.container .time {
+    font-size: 110px;
+    margin-bottom: 30px;
+    color: #414754;
+}
+
+
+/* -- box styling -- */
+.box {
+    width: 950px;
+}
+.box .box-container {
+    background-color: #414754;
+    width: 200px;
+    height: 235px;
+    float: left;
+    border-radius: 5px;
+}
+.box .box-container:not(:last-child) {
+    margin-right: 50px;
+}
+
+.box .box-container .header {
+    margin: 25px 0 9px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: #e3e8f0;
+}
+
+/* -- search styling -- */
+
+.container form {
+    background-color: #82807f;
+    border-radius: 5px;
+    width: 450px;
+    margin-bottom: 80px;
+}
+
+.container form .search-field, .container form .search-submit {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 10px;
+    position: relative;
+}
+
+.container form .search-field {
+    width: 89%;
+    padding-left: 15px;
+    color: #e3e8f0;
+    font-size: 18px;
+    bottom: -1px;
+    margin-top: 18px;
+}
+
+.container form .search-submit {
+    width: 10%;
+    top: 5px;
+}
+
+/* -- media query -- */
+@media only screen and (max-width: 985px) {
+    .box-container:nth-child(4), .box-container:nth-child(3) {
+        margin-top: 50px;
+    }
+    .box .box-container:nth-child(2), .box .box-container:nth-child(4) {
+        margin-right: 0;
+    }
+    .box {
+        width: 450px;
+    }
+}
